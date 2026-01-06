@@ -1,96 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .section {
-        display: grid;
-        padding: 10px;
-      }
-      .header {
-        padding: 10px;
-      }
-      .circle_icon {
-        display: grid;
-        height: 50px;
-        width: 50px;
-        border: 2px solid lightgray;
-        border-radius: 100%;
-        justify-items: center;
-        align-items: center;
-      }
-      .circle_list {
-        border: 1px solid black;
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: start; /* 왼쪽 몰림 */
-        grid-template-rows: auto auto;
-        gap: 10px;
-      }
-      .icon_content {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: center;
-      }
-      .card_list {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: start; /* 왼쪽 몰림 */
-        gap: 20px;
-      }
-      .card_img {
-        border : 1px solid black;
-        display: grid;
-        height: 150px;
-        width: 250px;
-        color: white;
-        font-size: 30px;
-        font-weight: 700;
-        border-radius: 20px;
-      }
-      div > p{
-        padding : 2px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="section">
-        <div class="header"><h2>add meals</h1></div>
-          <div class = "circle_icons">
-            <div class="circle_list">
-          <div class="circle_icon">🥪</div>
-          <div class="icon_content">All</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .lists{
+      padding : 10px;
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: start; /* 왼쪽 몰림 */
+      gap: 10px;
+    }
+    .circle_list{
+      display : grid;
+      width : 70px;
+      grid-auto-flow : row;
+      justify-items: center;
+    }
+    .circle_icon{
+      display: grid;
+      border-radius: 100%;
+      width : 40px;
+      height : 40px;
+      border : 3px solid lightblue;
+      align-content: center;
+      justify-content: center;
+    }
+    .circle_content{
+      display: grid;
+      padding : 10px;
+      justify-self: center;
+    }
+    .food_img{
+      margin-right: 50px;
+      display: grid;
+      width: 250px;
+      height : 150px;
+      border-radius: 20px;
+      justify-content: center;
+    }
+    .food_img > img{
+      width : 100%;
+      height : 100%;
+      border-radius: 20px;
+    }
+
+  </style>
+
+</head>
+<body>
+</body>
+  <div class = "main">
+    <div class = "section">
+      <div class = "header"><h2>Add meals</h2></div>
+      <div class = "lists">
+        <div class = "circle_list">
+          <div class = "circle_icon">🥪</div>
+          <div class = "circle_content">all</div>
         </div>
-        <div class="circle_list">
-          <div class="circle_icon">🥪</div>
-          <div class="icon_content">All</div>
+        <div class = "circle_list">
+          <div class = "circle_icon">🍕</div>
+          <div class = "circle_content">pizza</div>
         </div>
-        <div class="circle_list">
-          <div class="circle_icon">🥪</div>
-          <div class="icon_content">All</div>
+        <div class = "circle_list">
+          <div class = "circle_icon">🥩</div>
+          <div class = "circle_content">meat</div>
         </div>
-        <div class="circle_list">
-          <div class="circle_icon">🥪</div>
-          <div class="icon_content">All</div>
+        <div class = "circle_list">
+          <div class = "circle_icon">🥗</div>
+          <div class = "circle_content">veggies</div>
         </div>
-          </div>
-        
+      </div>
+      <hr>
+      <div class = "header"><h3>featured meals</h3></div>
+      <div class = "lists">
+        <div class = "food_img"><img src="meal1.png" alt=""></div>
+        <div class = "food_img"><img src="meal2.png" alt=""></div>
+        <div class = "food_img"><img src="meal3.png" alt=""></div>
+        <div class = "food_img"><img src="meal4.png" alt=""></div>
+      </div>
+      <hr>
+      <div><p>Pasta Carbonara</p></div>
+      <div><p>Lasagna</p></div>
     </div>
-    <hr>
-    <div class="section">
-        <div class="header"><h3>featured meals</h3></div>
-        <div class = "card_list">
-            <div class = "card_img"></div>
-            <div class = "card_img"></div>
-            <div class = "card_img"></div>
-            <div class = "card_img"></div>
-        </div>
-    </div>
-    <div class="section">
-        <div><p>Pasta Carbonara</p></div>
-        <div><p>Lasagna</p></div>
-    </div>
-  </body>
+  </div>
 </html>
