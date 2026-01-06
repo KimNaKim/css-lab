@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 900px) 1fr;
+        justify-self: center;
+      }
+      .section {
+        padding: 10px;
+        grid-column: 2; /* 가운데 컬럼 */
+      }
+      .header {
+        color: rgb(247, 99, 124);
+        justify-self: center;
+      }
+      .header2 {
+        display: grid;
+        justify-self: center;
+        padding: 5px;
+      }
+      .card_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+      }
+      .card_img {
+        background-image: url("london.jpg");
+        display: grid;
+        height: 250px;
+        width: 250px;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        border-radius: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+      .btn {
+        margin: 10px;
+        border: 3px solid gray;
+        background-color: brown;
+        border-radius: 20px;
+        color: white;
+        padding: 10px;
+        justify-self: center;
+      }
+      .btn:hover {
+        background-color: darkred;
+        border: 3px solid rgb(88, 88, 88);
+        color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="section">
+        <div class="header"><h1>Meet Guidebooks</h1></div>
+        <div class="header2">
+          Discover hundreds of local spots recommended by Airbnb hosts
+        </div>
+        <div class="card_list">
+          <div class="card_img">San Francisco</div>
+          <div class="card_img">New York</div>
+          <div class="card_img">London</div>
+        </div>
+        <div class="btn">See All Guidebooks</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="section">
+        <div class="header"><h1>Just for the weekend</h1></div>
+        <div class="header2">Discover new, inspiring places clase to home.</div>
+        <div class="card_list">
+          <div class="card_img">Napa</div>
+          <div class="card_img">Sonoma</div>
+          <div class="card_img">San Francisco</div>
+        </div>
+        <div class="btn">See All Destinations</div>
+      </div>
+    </div>
+  </body>
+</html>
