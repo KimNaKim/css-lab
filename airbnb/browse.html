@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        display: grid;
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      .header {
+        /*헤더(제목)*/
+        border-radius: 10px;
+      }
+      .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        gap: 5px;
+        border-radius: 10px;
+      }
+      .card {
+        border-radius: 5px;
+        display: grid;
+        height: 80px;
+        border: 2px solid lightgray;
+        grid-template-columns: 3fr 5fr;
+      }
+      .card_img {
+        display: grid;
+        height: 80px;
+        justify-items: center;
+        align-self: start;
+      }
+      .card_img > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+      }
+      .card_content {
+        display: grid;
+        justify-items: center;
+        font-size: 20px;
+        font-weight: 700;
+        align-items: center;
+      }
+      .card:hover {
+        background-color: lightgray;
+        border: 2px solid gray;
+      }
+      .img_big {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid black;
+        display: grid;
+        justify-self: center;
+        margin-top: 50px;
+      }
+      .suggetion {
+        margin-top: 50px;
+      }
+      .img_list {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .img_item {
+        border: 1px solid black;
+        display: grid;
+        height: 200px;
+        padding: 20px;
+        justify-content: center;
+        align-items: end;
+      }
+      .plus {
+        margin-top: 70px;
+      }
+      .plus_title {
+        font-size: 35px;
+        font-weight: 700;
+      }
+      .plus_img {
+        display: grid;
+        margin-top: 10px;
+        width: 100%;
+        border: 1px solid black;
+        height: 400px;
+      }
+      .plus_btn {
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        align-content: center;
+        border: 1px solid black;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+      }
+      .stay_place {
+        margin-top: 50px;
+      }
+      .stay_list {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .stay_item {
+        padding: 5px;
+        border: 1px solid black;
+        height: 300px;
+      }
+      .stay_img {
+        border: 1px solid black;
+        height: 200px;
+      }
+      .stay_subname {
+        color: gray;
+      }
+      .stay_name {
+        font-size: 30px;
+        font-weight: 500;
+      }
+      .stay_star {
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="outer">
+        <div class="header"><h1>에어비앤비 둘러보기</h1></div>
+        <div class="box">
+          <div class="card">
+            <div class="card_img">
+              <img
+                src="https://a0.muscache.com/4ea/air/v2/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?t=r:w375-h250-sfit,e:fjpg-c80"
+                alt=""
+              />
+            </div>
+            <div class="card_content">숙소 및 부티크 호텔</div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img
+                src="https://a0.muscache.com/4ea/air/v2/pictures/a77ee672-e790-4362-8cc5-52bec1371ece.jpg?t=r:w375-h250-sfit,e:fjpg-c80"
+                alt=""
+              />
+            </div>
+            <div class="card_content">트립</div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img
+                src="https://a0.muscache.com/4ea/air/v2/pictures/38f2bfd6-1f4d-46d7-babf-61657deef302.jpg?t=r:w375-h250-sfit,e:fjpg-c80"
+                alt=""
+              />
+            </div>
+            <div class="card_content">어드벤처</div>
+          </div>
+          <div class="card">
+            <div class="card_img">
+              <img
+                src="https://a0.muscache.com/4ea/air/v2/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg?t=r:w375-h250-sfit,e:fjpg-c80"
+                alt=""
+              />
+            </div>
+            <div class="card_content">레스토랑</div>
+          </div>
+        </div>
+        <div class="img_big"></div>
+        <div class="suggetion">
+          <div><h1>추천 여행지</h1></div>
+          <div class="img_list">
+            <div class="img_item">파리</div>
+            <div class="img_item">파리</div>
+            <div class="img_item">파리</div>
+            <div class="img_item">파리</div>
+            <div class="img_item">파리</div>
+          </div>
+        </div>
+        <div class="plus">
+          <div class="plus_title">에어비앤비 플러스를 만나보세요!</div>
+          <div class="plus_sub">
+            퀄리티와 인테리어 디자인이 검증된 숙소 컬렉션
+          </div>
+          <div class="plus_img">
+            <div class="plus_btn">숙소 둘러보기</div>
+          </div>
+        </div>
+        <div class="stay_place">
+          <div><h1>전 세계 숙소</h1></div>
+          <div class="stay_list">
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+            <div class="stay_item">
+              <div class="stay_img"></div>
+              <div class="stay_subname">발리오두막</div>
+              <div class="stay_name">발리오두막</div>
+              <div class="stay_star">별점</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
